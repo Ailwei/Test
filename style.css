@@ -1,0 +1,169 @@
+/* styles.css */
+
+/* General Reset */
+body, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Catalog Styles */
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-name {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-price {
+    color: #333;
+    font-weight: bold;
+}
+
+.product-rating {
+    margin: 10px 0;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+.modalContent {
+    background-color: #fff;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px; /* Limit the width */
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Modal Image */
+#modal-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.modalProductColor {
+    margin: 10px 0;
+}
+
+.modalProductRating {
+    font-weight: bold;
+    margin: 10px 0;
+}
+.image-wrapper {
+    position: relative; /* Allows absolute positioning of the sale tag */
+    display: inline-block; /* Ensure the wrapper sizes to the image */
+}
+
+.sale-tag {
+    position: absolute;
+    top: -180px; /* Distance from the top */
+    left: 10px; /* Align to the left */
+    background-color: white; /* Background color for the tag */
+    color: black; /* Text color */
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 35px; /* Rounded corners */
+    z-index: 1; /* Ensure it appears above the image */
+    opacity: 0.8; /* Slight transparency for aesthetic */
+    pointer-events: none; /* Allows clicks to go through the tag */
+}
+
+.catalog-header {
+    text-align: center; /* Center the header text */
+    margin-bottom: 10px; /* Space below the header */
+}
+
+.catalog-header h2 {
+    font-size: 24px; /* Font size for the header */
+}
+
+.catalog-header u {
+    text-decoration: underline; /* Underline the text */
+    text-decoration-color: blue;
+    text-decoration-thickness: 5px; /* Thickness of the underline */
+    text-decoration-style: solid; /* Style of the underline */
+    text-underline-offset: 15px; 
+
+}
+
+.highlight {
+    color: black; /* Color for highlighted words */
+    font-weight: bold; /* Bold style for emphasis */
+}
+.color-dot {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    border-radius: 50%; /* Make it a circle */
+    display: inline-block; /* Aligns dots next to each other */
+    margin-right: 5px; /* Space between dots */
+}
+#close {
+    font-size: 24px; /* Adjust size */
+    color: #333; /* Color */
+    float: right; /* Position to the right */
+    cursor: pointer; /
+}
+
+#close:hover {
+    color: red; /* Change color on hover */
+}
+
+
+
